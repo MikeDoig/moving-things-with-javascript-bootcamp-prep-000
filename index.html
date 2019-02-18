@@ -16,7 +16,14 @@
      console.log(dodger.style.bottom)
     // dodger.style.bottom = "380px"
     // dodger.style.left = "360px"
-
+document.addEventListener('keydown', function(e) {
+  if (e.which == 37) {
+    var leftNumbers = dodger.style.left.replace('px', '')
+    var left = parseInt(leftNumbers, 10)
+    dodger.style.left = `${left-1}px`
+  }
+  
+})
 
 
     
