@@ -39,7 +39,7 @@ function moveDodger (e) {
   if (e.which == 38) {
     var verticalNumbers = dodger.style.bottom.replace('px', '')
     var bottom = parseInt(verticalNumbers, 10)
-    if (bottom > 0){
+    if (bottom < 340){
     dodger.style.bottom = `${bottom+3}px`
 }
 }
