@@ -40,7 +40,7 @@ function moveDodger (e) {
     var verticalNumbers = dodger.style.bottom.replace('px', '')
     var bottom = parseInt(verticalNumbers, 10)
     if (bottom > 0){
-    dodger.style.bottom = `${bottom-3}px`
+    dodger.style.bottom = `${bottom+3}px`
 }
 }
 
