@@ -37,10 +37,10 @@ function moveDodger (e) {
 }
 //up
   if (e.which == 38) {
-    var leftNumbers = dodger.style.left.replace('px', '')
-    var left = parseInt(leftNumbers, 10)
-    if (left < 360){
-    dodger.style.left = `${left+3}px`
+    var verticalNumbers = dodger.style.bottom.replace('px', '')
+    var bottom = parseInt(verticalNumbers, 10)
+    if (bottom > 0){
+    dodger.style.bottom = `${bottom-3}px`
 }
 }
 
