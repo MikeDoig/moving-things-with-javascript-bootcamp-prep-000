@@ -21,21 +21,28 @@ document.addEventListener('keydown',
 function moveDodger (e) {
   //left
   if (e.which == 37) {
-    var leftNumbers = dodger.style.left.replace('px', '')
-    var left = parseInt(leftNumbers, 10)
+    var horizontalNumbers = dodger.style.left.replace('px', '')
+    var left = parseInt(horizontalNumbers, 10)
     if (left > 0){
     dodger.style.left = `${left-3}px`
   }
   }
   //right
   if (e.which == 39) {
+    var horizontalNumbers = dodger.style.left.replace('px', '')
+    var left = parseInt(horizontalNumbers, 10)
+    if (left < 360){
+    dodger.style.left = `${left+3}px`
+}
+}
+//up
+  if (e.which == 38) {
     var leftNumbers = dodger.style.left.replace('px', '')
     var left = parseInt(leftNumbers, 10)
     if (left < 360){
     dodger.style.left = `${left+3}px`
 }
 }
-
 
 })
 
